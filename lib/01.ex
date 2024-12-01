@@ -1,4 +1,4 @@
-defmodule Solution do
+defmodule Day01 do
   defp example,
     do: """
     3   4
@@ -16,14 +16,14 @@ defmodule Solution do
     read_input()
     |> String.split("\n", trim: true)
     |> Enum.map(fn line -> String.split(line) |> Enum.map(&String.to_integer/1) end)
-    |> Enum.zip
+    |> Enum.zip()
     |> Enum.map(&Tuple.to_list/1)
   end
 
   def first do
     preprocess_input()
     |> Enum.map(&Enum.sort/1)
-    |> Enum.zip
+    |> Enum.zip()
     |> Enum.reduce(0, fn {left, right}, acc -> acc + abs(left - right) end)
   end
 
