@@ -47,7 +47,7 @@ defmodule Day03 do
               # double unwrap list of lists
               |> Enum.at(0)
               |> Enum.at(0)
-#             # split string into list and parse integers
+              # split string into list and parse integers
               |> String.split(",")
               |> Enum.map(&String.to_integer/1)
 
