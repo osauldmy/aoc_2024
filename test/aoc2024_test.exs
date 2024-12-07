@@ -25,6 +25,10 @@ defmodule Aoc2024Test do
     assert Day05.first() == 5268
   end
 
+  test "day6" do
+    assert Day06.first() == 5080
+  end
+
   test "day7" do
     assert Day07.first() == 975_671_981_569
     assert Day07.second() == 223_472_064_194_845
