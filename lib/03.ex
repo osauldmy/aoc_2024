@@ -45,8 +45,8 @@ defmodule Day03 do
               # extract [["x,y"]] from "mul(x,y)"
               Regex.scan(~r/\d+,\d+/, operation)
               # double unwrap list of lists
-              |> Enum.at(0)
-              |> Enum.at(0)
+              |> hd
+              |> hd
               # split string into list and parse integers
               |> String.split(",")
               |> Enum.map(&String.to_integer/1)
