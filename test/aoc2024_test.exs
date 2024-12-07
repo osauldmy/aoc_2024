@@ -15,4 +15,9 @@ defmodule Aoc2024Test do
     assert Day03.first() == 178_794_710
     assert Day03.second() == 76_729_637
   end
+
+  test "day7" do
+    assert Day07.first() == 975_671_981_569
+    assert Day07.second() == 223_472_064_194_845
+  end
 end
